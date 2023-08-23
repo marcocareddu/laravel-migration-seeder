@@ -5,3 +5,5 @@
 
 {{-- Main --}}
 @section('main')
+    <h1>Titolo di prova</h1>
+@endsection
