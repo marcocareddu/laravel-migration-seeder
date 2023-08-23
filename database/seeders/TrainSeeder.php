@@ -15,7 +15,8 @@ class TrainSeeder extends Seeder
     public function run(Faker $faker): void
     {
         
-    $new_train = new Train();
+    $train = new Train();
+
     $train->company = $faker->company();
     $train->train_number = $faker->postcode();
     $train->departure_st = $faker->city();
