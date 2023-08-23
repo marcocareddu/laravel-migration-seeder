@@ -17,10 +17,10 @@ return new class extends Migration
             $table->smallInteger('train_number');
             $table->string('departure_st');
             $table->string('arrival_st');
-            $table->date('dep_hour');
-            $table->date('arr_hour');
+            $table->time('dep_hour');
+            $table->time('arr_hour');
             $table->tinyInteger('carriages');
-            $table->date('delay');
+            $table->smallInteger('delay');
             $table->boolean('deleted')->default(1);
             $table->timestamps();
         });
